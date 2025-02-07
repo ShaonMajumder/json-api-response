@@ -1,0 +1,21 @@
+{
+    "name": "shaonmajumder/json-api-response",
+    "description": "Laravel package for structured JSON API responses everywhere. Keep consistent response everywhere, without thinking about the structure, with lot of customization options.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shaonmajumder\\JsonApiResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shaon Majumder",
+            "email": "smazoomder@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "prefer-stable": true,
+    "keywords": ["laravel", "json", "api", "response"]
+}
