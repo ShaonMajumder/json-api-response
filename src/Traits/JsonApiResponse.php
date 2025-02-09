@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace Shaonmajumder\JsonApiResponse\Traits;
 
 trait JsonApiResponse
 {
