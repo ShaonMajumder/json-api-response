@@ -19,6 +19,7 @@ trait JsonApiResponse
      */
     private function respond(array $params)
     {
+        $initalParams = $params;
         if (!isset($params['message'])) {
             throw new \InvalidArgumentException('The "message" parameter is required.');
         }
@@ -51,6 +52,7 @@ trait JsonApiResponse
         if (json_last_error() !== JSON_ERROR_NONE) {
             throw new \RuntimeException(json_encode([
                 'error' => 'Error generating response template',
+                'initalParams' => $initalParams,
                 'json_error' => json_last_error_msg(),
                 'file' => __FILE__,
                 'line' => __LINE__,
